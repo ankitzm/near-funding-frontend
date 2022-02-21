@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import "./common.css"
 
 import PropTypes from 'prop-types';
-import Project from './project/project';
+import Project from './project';
 
 export default function AfterLogin({ contract, currentUser }) {
     const [projectList, setProjectList] = useState([]);
@@ -47,37 +48,32 @@ export default function AfterLogin({ contract, currentUser }) {
     }
 
     return (
-        <div>
-            <p>Signed in account - {currentUser.accountId} !</p>
+        <div className='afterLogin'>
+            <h2>Hello Howdy <strong>{currentUser.accountId}</strong> !</h2>
             <p>Balance - {currentUser.balance}</p>
 
             {/* add project */}
 
-            <div style={{ border: "2px solid red" }}>
-                add -
-                <input type="text" name="name" onChange={(e) => setName(e.target.value)} />
-                <input type="text" name="details" onChange={(e) => setDetails(e.target.value)} />
+            <div className='addProject'>
+                <strong> Add Your Project Here</strong>
+                {" "}
+                Project Name<input type="text" name="name" onChange={(e) => setName(e.target.value)} style={{margin:"10px"}}  />
+                Project Details<input type="text" name="details" onChange={(e) => setDetails(e.target.value)} style={{ margin: "10px" }}/>
 
-                <button onClick={handleSubmit}>
+                <button onClick={handleSubmit} className="BTN">
                     add project
                 </button>
             </div>
-            help me!!
 
-            <div style={{ border: "2px solid blue" }}>
-                projects -
-                {/* <button onClick={
-                    getProjectData
-                }>get project</button> */}
-                {projectList.length > 0 ? projectList.map(id => <p key={id}>{id}</p>) : "none"}
+            <div>
 
-                <button onClick={getProjectData}>See projects</button>
+                <button onClick={getProjectData} className="BTN">See projects</button>
 
                 <div>
                     {
                         projectData.length > 0 ?
                             <Project contract={contract} projectData={projectData} currentUserId={currentUser.accountId} />
-                            : "none"
+                            : "click above to display other user's project"
                     }
                 </div>
             </div>

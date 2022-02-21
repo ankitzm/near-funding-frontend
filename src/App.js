@@ -3,6 +3,7 @@ import './App.css';
 import PropTypes from 'prop-types';
 import AfterLogin from './components/afterLogin';
 import Home from './components/home';
+import "./components/common.css"
 
 // @ts-ignore
 window.Buffer = window.Buffer || require('buffer').Buffer;
@@ -28,11 +29,10 @@ function App({ contract, currentUser, nearConfig, wallet }) {
 
   return (
     <div className="App">
-      hello
-      <h1>open fund</h1>
+      <h1>Welcome to <strong>open funds</strong></h1>
       {currentUser
-        ? <button onClick={signOut}>Log out</button>
-        : <button onClick={signIn}>Log in</button>
+        ? <button onClick={signOut} className="BTN">Log out</button>
+        : <button onClick={signIn} className="BTN">Log in</button>
       }
 
       {currentUser
