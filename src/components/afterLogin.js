@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import "./common.css"
 
 import PropTypes from 'prop-types';
