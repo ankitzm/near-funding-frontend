@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+## Inspiration ⚡
+Open collective charges a lot of fee and the process is not open to all. So, I have built an alternative to open collective that can be trusted and will take no charge to uplift open source projects.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does ⚒
+It helps users to collect donation for their projects to continue work on them. The user can sign in through the app using Near wallet(testnet) and use it features. Once the user is logged in, they can add their own project or check the project listed on the app. The project data and user data is stored on Near blockchain and the transaction function is attached to all of them.
 
-## Available Scripts
+## How I built it 👀
+Smart Contract is built using Web Assembly and deployed on NEAR testnet. The Frontend is built using React.js and deployed using Vercel.
 
-In the project directory, you can run:
+## Challenges I ran into 🚩
+I am completely new to blockchain, so it took a lot of time to build simple logic on smart contract. It took more than 3 days to just get familiar with the code. Near Docs helped a lot to get started and deploy smart contract the right way. I got into one issue of transferring Near when the user clicks on "donate" button, So I hardcoded the value for now. When the user clicks on the donate button, ~0.00001 NEARs are being transferred from the logged in account.
 
-### `npm start`
+## Accomplishments that I am proud of 😎
+I am proud of the accomplishment that I built a Full Stack blockchain App for the first time and completed that on time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What we learned 🙌
+I learned how data in blockchain works, building Smart Contracts with Web Assembly and using near-api-js sdk for calling Smart Contract from the Frontend code.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Smart Contract
+The Smart Contract code can be found https://github.com/ankitzm/near-funding and it is deployed on Near blockchain on testnet. \
+Here is the explorer link for smart contract - https://explorer.testnet.near.org/accounts/dev-1645439743021-63191839817556
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## How to replicate the repo 👾
+1. Clone the repo on your local machine.
+2. ``` npm install ```
+3. ``` npm start ```
+4. That's it, the loccalhost will be started and the web-app can be used.
+5. Leave a ⭐ if you loved the project.
