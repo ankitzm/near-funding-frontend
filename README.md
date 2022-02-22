@@ -24,5 +24,5 @@ Here is the explorer link for smart contract - https://explorer.testnet.near.org
 1. Clone the repo on your local machine.
 2. ``` npm install ```
 3. ``` npm start ```
-4. That's it, the loccalhost will be started and the web-app can be used.
+4. That's it, the localhost will be started and the web-app can be used.
 5. Leave a ⭐ if you loved the project.
