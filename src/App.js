@@ -29,12 +29,11 @@ function App({ contract, currentUser, nearConfig, wallet }) {
 
   return (
     <div className="App">
-      <h1>Welcome to <strong>open funds</strong></h1>
+      <h1 className='heading'>Welcome to open funds</h1>
       {currentUser
         ? <button onClick={signOut} className="BTN">Log out</button>
         : <button onClick={signIn} className="BTN">Log in</button>
       }
-
       {currentUser
         ? <AfterLogin contract={contract} currentUser={currentUser} />
         : <Home />

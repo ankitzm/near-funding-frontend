@@ -1,121 +1,116 @@
 .project {
-    border: 2px solid yellow;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 15px 30px;
 }
 
 .box {
-    /* border: 2px solid rgb(82, 82, 82); */
-    border-top: 5px solid cyan;
-    width: 200px;
-    border-radius: 5px;
-    box-shadow: 0px 30px 40px -20px gray;
-    padding: 30px;
-    margin: 40px;  
+  background: rgba(255, 255, 255, 0.7);
+backdrop-filter: saturate(180%) blur(10px);
+  border-top: 5px solid rgb(49, 49, 49);
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px rgb(59, 59, 59);
+  padding: 30px;
+  margin: 40px;  
 }
 
 h2 {
-    color: var(--varyDarkBlue);
-    font-weight: var(--weight3);
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 .header {
-    text-align: center;
-    line-height: 0.8;
-    margin-bottom: 50px;
-    margin-top: 100px;
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 .header p {
-    margin: 0 auto;
-    line-height: 2;
-    color: var(--grayishBlue);
+  margin: 0 auto;
+  line-height: 2;
+  color: var(--grayishBlue);
 }
 
 /* button CSS */
 
+/* CSS */
 .BTN {
-  background: #fff;
-  backface-visibility: hidden;
-  border-radius: .375rem;
-  border-style: solid;
-  border-width: .125rem;
-  box-sizing: border-box;
-  color: #212121;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: .875rem 1.125rem;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+appearance: none;
+background-color: #000000;
+border: 2px solid #1A1A1A;
+border-radius: 15px;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+min-height: 60px;
+min-width: 0;
+outline: none;
+padding: 16px 24px;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+will-change: transform;
+margin-bottom: 10px;
 }
 
-.button-80:not(:disabled):hover {
-  transform: scale(1.05);
+.BTN:disabled {
+pointer-events: none;
 }
 
-.button-80:not(:disabled):hover:active {
-  transform: scale(1.05) translateY(.125rem);
+.BTN:hover {
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
 }
 
-.button-80:focus {
-  outline: 0 solid transparent;
-}
-
-.button-80:focus:before {
-  content: "";
-  left: calc(-1*.375rem);
-  pointer-events: none;
-  position: absolute;
-  top: calc(-1*.375rem);
-  transition: border-radius;
-  user-select: none;
-}
-
-.button-80:focus:not(:focus-visible) {
-  outline: 0 solid transparent;
-}
-
-.button-80:focus:not(:focus-visible):before {
-  border-width: 0;
-}
-
-.button-80:not(:disabled):active {
-  transform: translateY(.125rem);
+.BTN:active {
+box-shadow: none;
+transform: translateY(0);
 }
 
 
 .addProject {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  margin-bottom: 40px;
+border: 1px solid rgba(0, 0, 0, 0.128);
+margin-top: 20px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 300px;
+margin-bottom: 40px;
 }
 
 .afterLogin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
+
+.textBox {
+background-color: rgba(220, 220, 220, 0.6);
+margin: 10px 0px;
+height: 30px;
+width: 250px;
+border: 1px solid rgba(0, 0, 0, 0.098);
+border-radius: 10px;
+
+}

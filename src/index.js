@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import getConfig from './functions/config';
 import * as nearAPI from 'near-api-js';
+import "./index.css"
 
 // Initializing contract
 async function initContract() {
@@ -60,14 +61,16 @@ window.nearInitPromise = initContract().then(
   ({ contract, currentUser, nearConfig, walletConnection }) => {
     // setTimeout(() => {
     ReactDOM.render(
+        <div className='body'>
       <App
         contract={contract}
         currentUser={currentUser}
         nearConfig={nearConfig}
         wallet={walletConnection}
-      />,
+          />
+        </div>,
       document.getElementById('root')
-    );
+      );
     // }, 3000);
   }
 );

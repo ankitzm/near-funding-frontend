@@ -49,16 +49,16 @@ export default function AfterLogin({ contract, currentUser }) {
 
     return (
         <div className='afterLogin'>
-            <h2>Hello Howdy <strong>{currentUser.accountId}</strong> !</h2>
+            <h2>Hello <strong>{currentUser.accountId}</strong> !</h2>
             <p>Balance - {currentUser.balance}</p>
 
             {/* add project */}
 
             <div className='addProject'>
                 <strong> Add Your Project Here</strong>
-                {" "}
-                Project Name<input type="text" name="name" onChange={(e) => setName(e.target.value)} style={{margin:"10px"}}  />
-                Project Details<input type="text" name="details" onChange={(e) => setDetails(e.target.value)} style={{ margin: "10px" }}/>
+                <br />
+                Project Name <input type="text" name="name" onChange={(e) => setName(e.target.value)} className="textBox" />
+                Project Details <input type="text" name="details" onChange={(e) => setDetails(e.target.value)} className="textBox" />
 
                 <button onClick={handleSubmit} className="BTN">
                     add project
