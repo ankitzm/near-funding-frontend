@@ -27,8 +27,10 @@ function App({ contract, currentUser, nearConfig, wallet }) {
     window.location.replace(window.location.origin + window.location.pathname);
   };
 
+  console.log(currentUser);
+
   return (
-    <div className="App">
+    <div className={`App ${currentUser === undefined ? "center" : ""}`} >
       <h1 className='heading'>Welcome to open funds</h1>
       {currentUser
         ? <button onClick={signOut} className="BTN">Log out</button>
